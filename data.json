@@ -1,0 +1,191 @@
+{
+  "data": {
+    "works": [
+      {
+        "title": "Pixseb",
+        "client": "INSA Strasbourg via l'agence Idéematic",
+        "role": "Développeur",
+        "date": "Août 2018",
+        "url": "http://pixseb.com/",
+        "mainImg": "/portfolio/covers/pixseb.jpg",
+        "short": "J'ai eu l'opportunité d'être le principal développeur d'un nouveau projet mené par l'agence Idéematic pour leur partenaire l'INSA de Strasbourg. J'ai ainsi pu développer la majeure partie d'une application de traitement de données industrielles.",
+        "content": [
+          {
+            "type": "youtube",
+            "url": "https://www.youtube.com/embed/To-Yr5Gt3Jk?rel=0"
+          },
+          {
+            "type": "paragraph",
+            "title": "Un projet novateur",
+            "content": "Pixseb permet de créer des projets découpés en étapes durant lesquelles l'utilisateur renseigne des informations sur ces besoins et des brevets afin de générer à la fin un diagramme SUN permettant de visualiser les meilleurs technologies utiles à l'objectif fixé. J'ai pu développer un back-office permettant aux administrateur de gérer les utilisateurs, le parcours de création d'un projet décomposé en plusieurs étapes et enfin le service permettant d'interagir avec une API fournie par l'INSA contenant des brevets et du machine learning qui analyse des brevets afin d'en extraire des informations utiles pour la génération du diagramme final."
+          },
+          {
+            "type": "paragraph",
+            "title": "Le diagramme SUN",
+            "content": "Le résultat d'un projet Pixseb est le diagramme SUN qui présente les brevets disposés en arc de cercle autour d'un centre représentant la solution idéale à l'innovation voulue. Pour pouvoir générer ce diagramme j'ai dû créer des fonctions permettant de produire des éléments SVG, de placer dans un repère cartésien des données radiales et d'attribuer un score aux différents brevets placés sur ce diagramme en fonctions des éléments saisis par l'utilisateur. Un export au format PNG et au format PDF avec un résumé du projet est également possible. La lisibilité et le placement des objets SVG ont été les challenges les plus importants de ce projets."
+          }
+        ]
+      },
+      {
+        "title": "Portes Ouvertes",
+        "client": "Portes Ouvertes via l'agence Idéematic",
+        "role": "Développeur",
+        "date": "Mai 2018",
+        "url": "https://www.portesouvertes.fr/",
+        "mainImg": "/portfolio/covers/portesouvertes.jpg",
+        "short": "Création d'une plateforme de publication de contenus pour Portes Ouvertes, une ONG internationale chrétienne qui est au service des chrétiens persécutés dans le monde. L'agence Idéematic a été choisie pour mener à bien la réalisation de ce projet pour les branches françaises et espagnoles de cette association.",
+        "content": [
+          {
+            "type": "youtube",
+            "url": "https://www.youtube.com/embed/To-Yr5Gt3Jk?rel=0"
+          },
+          {
+            "type": "paragraph",
+            "title": "Un projet novateur",
+            "content": "Pixseb permet de créer des projets découpés en étapes durant lesquelles l'utilisateur renseigne des informations sur ces besoins et des brevets afin de générer à la fin un diagramme SUN permettant de visualiser les meilleurs technologies utiles à l'objectif fixé. J'ai pu développer un back-office permettant aux administrateur de gérer les utilisateurs, le parcours de création d'un projet décomposé en plusieurs étapes et enfin le service permettant d'interagir avec une API fournie par l'INSA contenant des brevets et du machine learning qui analyse des brevets afin d'en extraire des informations utiles pour la génération du diagramme final."
+          },
+          {
+            "type": "paragraph",
+            "title": "Le diagramme SUN",
+            "content": "Le résultat d'un projet Pixseb est le diagramme SUN qui présente les brevets disposés en arc de cercle autour d'un centre représentant la solution idéale à l'innovation voulue. Pour pouvoir générer ce diagramme j'ai dû créer des fonctions permettant de produire des éléments SVG, de placer dans un repère cartésien des données radiales et d'attribuer un score aux différents brevets placés sur ce diagramme en fonctions des éléments saisis par l'utilisateur. Un export au format PNG et au format PDF avec un résumé du projet est également possible. La lisibilité et le placement des objets SVG ont été les challenges les plus importants de ce projets."
+          }
+        ]
+      },
+      {
+        "title": "Fed Finance",
+        "client": "Groupe Fed via l'agence Idéematic",
+        "role": "Développeur",
+        "date": "Mai 2017",
+        "url": "https://www.fedfinance.fr/",
+        "mainImg": "/portfolio/covers/fedfinance@2x.jpg",
+        "short": "Refonte du site web de Fed Finance, client de l'agence Idéematic, dont l'ancien site avait été créé avec Drupal. Ce projet s'intégrait à la refonte de tous les sites du groupe Fed avec une nouvelle architecture basée sur Ruby on Rails.",
+        "content": [
+          {
+            "type": "youtube",
+            "url": "https://www.youtube.com/embed/To-Yr5Gt3Jk?rel=0"
+          },
+          {
+            "type": "paragraph",
+            "title": "Un projet novateur",
+            "content": "Pixseb permet de créer des projets découpés en étapes durant lesquelles l'utilisateur renseigne des informations sur ces besoins et des brevets afin de générer à la fin un diagramme SUN permettant de visualiser les meilleurs technologies utiles à l'objectif fixé. J'ai pu développer un back-office permettant aux administrateur de gérer les utilisateurs, le parcours de création d'un projet décomposé en plusieurs étapes et enfin le service permettant d'interagir avec une API fournie par l'INSA contenant des brevets et du machine learning qui analyse des brevets afin d'en extraire des informations utiles pour la génération du diagramme final."
+          },
+          {
+            "type": "paragraph",
+            "title": "Le diagramme SUN",
+            "content": "Le résultat d'un projet Pixseb est le diagramme SUN qui présente les brevets disposés en arc de cercle autour d'un centre représentant la solution idéale à l'innovation voulue. Pour pouvoir générer ce diagramme j'ai dû créer des fonctions permettant de produire des éléments SVG, de placer dans un repère cartésien des données radiales et d'attribuer un score aux différents brevets placés sur ce diagramme en fonctions des éléments saisis par l'utilisateur. Un export au format PNG et au format PDF avec un résumé du projet est également possible. La lisibilité et le placement des objets SVG ont été les challenges les plus importants de ce projets."
+          }
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "HTML5",
+        "level": "advanced"
+      },
+      {
+        "name": "CSS3",
+        "level": "advanced"
+      },
+      {
+        "name": "Javascript",
+        "level": "advanced"
+      },
+      {
+        "name": "jQuery",
+        "level": "advanced"
+      },
+      {
+        "name": "Ruby on Rails",
+        "level": "advanced"
+      },
+      {
+        "name": "PHP",
+        "level": "beginner"
+      },
+      {
+        "name": "Ruby",
+        "level": "experienced"
+      },
+      {
+        "name": "Gulp",
+        "level": "experienced"
+      },
+      {
+        "name": "Bootstrap",
+        "level": "experienced"
+      },
+      {
+        "name": "Jekyll",
+        "level": "experienced"
+      },
+      {
+        "name": "GatsbyJS",
+        "level": "experienced"
+      },
+      {
+        "name": "React Native",
+        "level": "advanced"
+      },
+      {
+        "name": "Sketch",
+        "level": "beginner"
+      },
+      {
+        "name": "WordPress",
+        "level": "beginner"
+      },
+      {
+        "name": "ReactJS",
+        "level": "advanced"
+      },
+      {
+        "name": "Typescript",
+        "level": "beginner"
+      }
+    ],
+    "work_experiences": [
+      {
+        "body": "Refonte du site web de l’entreprise (blog, portfolio, services, etc...) - almedia.fr<br>Réalisation d’un serious game pour la CCI Alsace - smarttech-solutions.eu<br>Utilisation de Javascript et de Jekyll.<br>Travail en autonomie et responsabilité technique de projets.",
+        "title": "Développeur web apprenti chez Almédia SARL",
+        "role": "Développeur",
+        "dateBegin": "2015-10-01",
+        "dateEnd": "2016-07-03",
+        "companyUrl": "http://www.almedia.fr",
+        "workUrl": "/works/almedia/"
+      },
+      {
+        "body": "Stage de fin de parcours de DUT<br>Développeur web / cadre international (FR / DE / EN)<br>Développement PHP, Intégration de template email, utilisation d’API<br>Travail sur le site principal de l’entreprise",
+        "title": "Développeur web stagiaire chez Dalim Software GmbH",
+        "role": "Développeur",
+        "dateBegin": "2015-04-07",
+        "dateEnd": "2015-06-26",
+        "companyUrl": "https://www.dalim.com/fr/home/"
+      },
+      {
+        "body": "Acquisition de compétences dans le développement web, le design, le multimédia et l’informatique en général<br>IUT de Haguenau",
+        "title": "DUT Métiers du Multimédia et de l’Internet",
+        "role": "Formation",
+        "dateBegin": "2013-09-01",
+        "dateEnd": "2015-07-01",
+        "companyUrl": "http://iuthaguenau.unistra.fr/dut/mmi-metiers-du-multimedia-et-de-linternet/"
+      },
+      {
+        "body": "Apprentissage approfondi du framework Ruby on Rails (version 4 et 5), développement d'applications web et d'application mobiles avec React Native (architecture complète avec Redux), travail en équipe sous la tutelle d'un chef de projet.<br>Strasbourg",
+        "title": "Développeur Ruby on Rails chez Idéematic",
+        "role": "Développeur web",
+        "dateBegin": "2016-10-16",
+        "dateEnd": "Aujourd'hui",
+        "companyUrl": "https://www.ideematic.com/",
+        "workUrl": "/works/fedfinance"
+      },
+      {
+        "body": "Approfondissement des compétences en développement web vues au cours du DUT. Back-end, front-end, React, Drupal, arts visuels, UI & UX Design.<br>IUT de Haguenau",
+        "title": "Licence Professionnelle Techniques et Activités de l’Image et du Son",
+        "role": "Formation",
+        "dateBegin": "2015-09-01",
+        "dateEnd": "2016-07-01",
+        "companyUrl": "http://iuthaguenau.unistra.fr/licence-pro/lp-tais-techniques-et-activites-de-l-image-et-du-son/"
+      }
+    ]
+  }
+}

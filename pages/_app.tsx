@@ -8,7 +8,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
   const url = `https://joelmercier.io${router.route}`
 
   return (
-    <div className='bg-slate-900 w-screen h-screen'>
+    <div className='bg-slate-900'>
       <Head>
         <link rel="icon" href="/icons/favicon.ico" />
       </Head>

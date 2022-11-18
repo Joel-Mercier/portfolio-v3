@@ -13,14 +13,14 @@ const variants = {
 
 const Layout = ({ children }: Props): JSX.Element => {
   return (
-    <div>
+    <div className="w-screen h-screen">
       <motion.main
         initial="hidden"
         animate="enter"
         exit="exit"
         variants={variants}
         transition={{ type: 'linear' }}
-        className=""
+        className="h-full"
       >
         {children}
       </motion.main>

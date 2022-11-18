@@ -7,7 +7,7 @@ const Header = (): JSX.Element => {
   const [isToggleOpen, setIsToggleOpen] = useState(false)
   const router = useRouter();
   return (
-    <header className="border-b-1 relative z-20 w-full">
+    <header className="absolute border-b-1 z-20 w-full">
       <div className="relative mx-auto max-w-full px-6 lg:max-w-5xl xl:max-w-7xl 2xl:max-w-[96rem]">
         <nav
           aria-label="main navigation"

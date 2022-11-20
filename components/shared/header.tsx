@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
-import Link from 'next/link'
-import { useRouter } from 'next/router'
-import classNames from 'classnames'
+import React, { useState } from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import classNames from "classnames";
+import ThemeToggle from "./themeToggle";
 
 const Header = (): JSX.Element => {
-  const [isToggleOpen, setIsToggleOpen] = useState(false)
+  const [isToggleOpen, setIsToggleOpen] = useState(false);
   const router = useRouter();
   return (
     <header className="absolute border-b-1 z-20 w-full">
@@ -21,17 +22,40 @@ const Header = (): JSX.Element => {
             href="/"
             scroll={false}
           >
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76.03 54" width="64" height="64">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 76.03 54"
+              width="64"
+              height="64"
+            >
               <g>
-                <polygon points="56.03 54 46.97 54 40 18 49.25 18 56.03 54" fill="#673a5d" />
-                <polygon points="27 54 36 54 49.25 18 40 18 27 54" fill="#fff" />
-                <polygon points="76.03 36 66.97 36 60 18 69.25 18 76.03 36" fill="#673a5d" />
-                <polygon points="47 54 56 54 69.25 18 60 18 47 54" fill="#fff" />
+                <polygon
+                  points="56.03 54 46.97 54 40 18 49.25 18 56.03 54"
+                  fill="#673a5d"
+                />
+                <polygon
+                  points="27 54 36 54 49.25 18 40 18 27 54"
+                  fill="#fff"
+                />
+                <polygon
+                  points="76.03 36 66.97 36 60 18 69.25 18 76.03 36"
+                  fill="#673a5d"
+                />
+                <polygon
+                  points="47 54 56 54 69.25 18 60 18 47 54"
+                  fill="#fff"
+                />
               </g>
               <g>
-                <polygon points="16.03 54 6.97 54 0 36 9.25 36 16.03 54" fill="#673a5d" />
+                <polygon
+                  points="16.03 54 6.97 54 0 36 9.25 36 16.03 54"
+                  fill="#673a5d"
+                />
                 <polygon points="7 54 16 54 29.25 18 20 18 7 54" fill="#fff" />
-                <polygon points="23.25 9 32.5 9 35.75 0 26.5 0 23.25 9" fill="#fff" />
+                <polygon
+                  points="23.25 9 32.5 9 35.75 0 26.5 0 23.25 9"
+                  fill="#fff"
+                />
               </g>
             </svg>
           </Link>
@@ -76,7 +100,10 @@ const Header = (): JSX.Element => {
                 role="menuitem"
                 aria-haspopup="false"
                 tabIndex={0}
-                className={classNames("flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:outline-none focus-visible:outline-none lg:px-8", {"text-emerald-500": router.pathname === '/'})}
+                className={classNames(
+                  "flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:outline-none focus-visible:outline-none lg:px-8",
+                  { "text-emerald-500": router.pathname === "/" }
+                )}
                 href="/"
                 scroll={false}
               >
@@ -89,7 +116,10 @@ const Header = (): JSX.Element => {
                 aria-current="page"
                 aria-haspopup="false"
                 tabIndex={0}
-                className={classNames("flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:outline-none focus-visible:outline-none lg:px-8", {"text-emerald-500": router.pathname === '/about'})}
+                className={classNames(
+                  "flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:outline-none focus-visible:outline-none lg:px-8",
+                  { "text-emerald-500": router.pathname === "/about" }
+                )}
                 href="/about"
                 scroll={false}
               >
@@ -102,7 +132,10 @@ const Header = (): JSX.Element => {
                 aria-current="page"
                 aria-haspopup="false"
                 tabIndex={0}
-                className={classNames("flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:outline-none focus-visible:outline-none lg:px-8", {"text-emerald-500": router.pathname === '/blog'})}
+                className={classNames(
+                  "flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:outline-none focus-visible:outline-none lg:px-8",
+                  { "text-emerald-500": router.pathname === "/blog" }
+                )}
                 href="/blog"
                 scroll={false}
               >
@@ -110,10 +143,11 @@ const Header = (): JSX.Element => {
               </Link>
             </li>
           </ul>
+          <ThemeToggle />
         </nav>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

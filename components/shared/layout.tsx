@@ -1,6 +1,7 @@
-import { ReactNode, useEffect, useState } from "react";
+import { ReactNode, useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import router from "next/router";
+import { useAnimationFrame } from "../../lib/useAnimationFrame";
 
 type Props = {
   children: ReactNode;
@@ -14,26 +15,36 @@ const variants = {
 
 const Layout = ({ children }: Props): JSX.Element => {
   const [scrollEnabled, setScrollEnabled] = useState<boolean>(false);
+  const asscrollRef = useRef<any>();
 
   useEffect(() => {
-    console.log("useEffect");
     if (!scrollEnabled) {
       const ASScroll = require("@ashthornton/asscroll");
-      const asscroll = new ASScroll();
-      asscroll.enable();
+      asscrollRef.current = new ASScroll({
+        disableRaf: true,
+      });
+      asscrollRef.current.enable();
       const handleRouteChange = () => {
         setTimeout(() => {
-          asscroll.onResize(window.innerWidth, window.innerHeight);
+          asscrollRef.current.onResize(window.innerWidth, window.innerHeight);
         }, 500);
       };
 
       router.events.on("routeChangeComplete", handleRouteChange);
       setScrollEnabled(false);
     }
-  }, [scrollEnabled, setScrollEnabled]);
+
+    return () => {
+      asscrollRef.current.disable();
+    };
+  }, [scrollEnabled]);
+
+  useAnimationFrame(() => {
+    asscrollRef.current.update();
+  });
 
   return (
-    <div asscroll-container="true">
+    <div asscroll-container="true" className="bg-gray-200 dark:bg-zinc-900">
       <div>
         <motion.main
           initial="hidden"

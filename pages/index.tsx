@@ -92,9 +92,9 @@ const Home = ({ works }: Props): JSX.Element => {
         />
       </Head>
       <div className="flex items-center justify-center w-screen h-screen">
-        <div className="relative w-full ml-auto mr-auto">
-          <div className="overflow-hidden w-full" ref={viewportRef}>
-            <div className="flex select-none -ml-2">
+        <div className="relative w-full ml-auto mr-auto h-full">
+          <div className="overflow-hidden w-full h-full" ref={viewportRef}>
+            <div className="flex select-none -ml-2 w-full h-full">
               {works.map((work, index) => (
                 <Slide
                   item={work}

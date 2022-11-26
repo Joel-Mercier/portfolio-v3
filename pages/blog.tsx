@@ -72,10 +72,6 @@ const Blog = (): JSX.Element => {
           </p>
 
           <h3>iframe:</h3>
-          <iframe
-            src="https://cdpn.io/ashthornton/debug/ff7efd49451e9faf9416eb989bfaac8c"
-            frameBorder="0"
-          ></iframe>
 
           <div>
             Quisque quis tincidunt nunc. In magna est, malesuada quis tempus id,
@@ -225,10 +221,6 @@ const Blog = (): JSX.Element => {
             est commodo erat, et vulputate ex neque in neque. In id pharetra
             orci, vel feugiat ipsum.
           </p>
-          <iframe
-            src="https://cdpn.io/ashthornton/debug/ff7efd49451e9faf9416eb989bfaac8c"
-            frameBorder="0"
-          ></iframe>
         </div>
       </div>
     </Layout>

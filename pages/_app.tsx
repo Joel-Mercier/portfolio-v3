@@ -12,18 +12,13 @@ export default function App({ Component, pageProps, router }: AppProps) {
 
   return (
     <ThemeProvider attribute="class">
-      <div
-        className={classNames(
-          "bg-slate-900 dark:bg-gray-200 font-sans",
-          sono.variable
-        )}
-      >
+      <div className={classNames("font-sans", sono.variable)}>
         <Head>
           <link rel="icon" href="/icons/favicon.ico" />
         </Head>
         <Header />
         <AnimatePresence
-          exitBeforeEnter
+          mode="wait"
           initial={false}
           onExitComplete={() => window.scrollTo(0, 0)}
         >

@@ -9,8 +9,8 @@ type Props = {
 
 const Slide = ({ item, onClick, parallaxValues }: Props): JSX.Element => {
   return (
-    <div className="relative pl-2" onClick={onClick}>
-      <div className="relative h-48 flex items-center justify-center overflow-hidden">
+    <div className="pl-2" onClick={onClick}>
+      <div className="h-48 flex items-center justify-center overflow-hidden">
         <h2>{item.title}</h2>
         <div
           className="absolute top-0 right-0 bottom-0 left-0"

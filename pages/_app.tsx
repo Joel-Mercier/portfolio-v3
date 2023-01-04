@@ -5,14 +5,14 @@ import Header from "../components/shared/header";
 import { AnimatePresence } from "framer-motion";
 import { ThemeProvider } from "next-themes";
 import classNames from "classnames";
-import { sono } from "../lib/fonts";
+import { prompt } from "../lib/fonts";
 
 export default function App({ Component, pageProps, router }: AppProps) {
   const url = `https://joelmercier.io${router.route}`;
 
   return (
     <ThemeProvider attribute="class">
-      <div className={classNames("font-sans", sono.variable)}>
+      <div className={classNames("font-sans", prompt.variable)}>
         <Head>
           <link rel="icon" href="/icons/favicon.ico" />
         </Head>

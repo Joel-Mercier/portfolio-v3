@@ -1,6 +1,7 @@
-import { Sono } from "@next/font/google";
+import { Prompt } from "@next/font/google";
 
-export const sono = Sono({
+export const prompt = Prompt({
   subsets: ["latin"],
-  variable: "--font-sono",
+  weight: ["300", "400", "700"],
+  variable: "--font-prompt",
 });

@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-sono)", ...fontFamily.sans],
+        sans: ["var(--font-prompt)", ...fontFamily.sans],
       },
     },
   },

@@ -10,7 +10,7 @@ type Props = {
 };
 
 const PARALLAX_FACTOR = 1.2;
-const options = { selected: "embla__slide--active" };
+const options = { selected: "embla__slide--active", dragging: "embla__slide--dragging", draggable: "embla__slide--draggable" };
 
 const Carousel = ({ slides }: Props): JSX.Element => {
   const [prevBtnEnabled, setPrevBtnEnabled] = useState<boolean>(false);
@@ -39,9 +39,17 @@ const Carousel = ({ slides }: Props): JSX.Element => {
   }, [embla]);
   const onSlideClick = useCallback(
     (index: number) => {
-      if (embla && embla.clickAllowed()) console.log(index);
+      if (embla && embla.clickAllowed()) {
+        const currentIndex = embla.selectedScrollSnap();
+        if (currentIndex > index) {
+          scrollPrev()
+        } else {
+          scrollNext()
+        }
+        console.log(index);
+      }
     },
-    [embla]
+    [embla, scrollNext, scrollPrev]
   );
   const onScroll = useCallback(() => {
     if (!embla) return;
@@ -77,46 +85,12 @@ const Carousel = ({ slides }: Props): JSX.Element => {
     embla.on("resize", onScroll);
   }, [embla, onSelect, onScroll]);
 
-  // return (
-  //   <div className="relative w-full ml-auto mr-auto h-full">
-  //     <div className="overflow-hidden w-full h-full" ref={viewportRef}>
-  //       <div className="flex select-none -ml-2 w-full h-full">
-  //         {slides.map((slide, index) => (
-  //           <Slide
-  //             item={slide}
-  //             key={index}
-  //             onClick={() => onSlideClick(index)}
-  //             parallaxValues={parallaxValues[index]}
-  //           />
-  //         ))}
-  //       </div>
-  //     </div>
-  //   </div>
-  // );
-
   return (
     <div className="p-2 embla">
       <div className="overflow-hidden embla__viewport" ref={viewportRef}>
         <div className="flex flex-1 flex-row h-auto -ml-2 embla__container">
           {slides.map((slide, index) => (
-            <div className="relative pl-2 min-w-0 embla__slide transition-transform duration-500" key={index}>
-              <div className="embla__parallax">
-                <div
-                  className="embla__parallax__layer"
-                  style={{
-                    ...(parallaxValues.length && {
-                      transform: `translateX(${parallaxValues[index]}%)`,
-                    }),
-                  }}
-                >
-                  <img
-                    className="block w-full object-cover embla__slide__img embla__parallax__img"
-                    src={slide.mainImg}
-                    alt="Your alt text"
-                  />
-                </div>
-              </div>
-            </div>
+            <Slide active={(embla?.selectedScrollSnap() || 0) === index} item={slide} key={index} onClick={() => onSlideClick(index)} parallaxValues={parallaxValues[index]} />
           ))}
         </div>
       </div>

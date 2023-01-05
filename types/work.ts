@@ -5,6 +5,8 @@ export type Work = {
   date: string
   mainImg: string
   short: string
+  slug: string
+  colors: string[]
   content: {
     type: string,
     url?: string,

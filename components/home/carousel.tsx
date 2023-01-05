@@ -10,7 +10,7 @@ type Props = {
 };
 
 const PARALLAX_FACTOR = 1.2;
-const options = { selected: "embla__slide--active", dragging: "embla__slide--dragging", draggable: "embla__slide--draggable" };
+const options = { selected: "home__carousel__slide--active", dragging: "home__carousel__slide--dragging", draggable: "home__carousel__slide--draggable" };
 
 const Carousel = ({ slides }: Props): JSX.Element => {
   const [prevBtnEnabled, setPrevBtnEnabled] = useState<boolean>(false);
@@ -86,9 +86,9 @@ const Carousel = ({ slides }: Props): JSX.Element => {
   }, [embla, onSelect, onScroll]);
 
   return (
-    <div className="p-2 embla">
-      <div className="overflow-hidden embla__viewport" ref={viewportRef}>
-        <div className="flex flex-1 flex-row h-auto -ml-2 embla__container">
+    <div className="p-2 home__carousel">
+      <div className="overflow-hidden home__carousel__viewport" ref={viewportRef}>
+        <div className="flex flex-1 flex-row h-auto -ml-2 home__carousel__container">
           {slides.map((slide, index) => (
             <Slide active={(embla?.selectedScrollSnap() || 0) === index} item={slide} key={index} onClick={() => onSlideClick(index)} parallaxValues={parallaxValues[index]} />
           ))}

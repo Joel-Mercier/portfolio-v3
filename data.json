@@ -3,12 +3,17 @@
     "works": [
       {
         "title": "Pixseb",
+        "slug": "pixseb",
         "client": "INSA Strasbourg via l'agence Idéematic",
         "role": "Développeur",
         "date": "Août 2018",
         "url": "http://pixseb.com/",
         "mainImg": "/portfolio/covers/pixseb.jpg",
-        "short": "J'ai eu l'opportunité d'être le principal développeur d'un nouveau projet mené par l'agence Idéematic pour leur partenaire l'INSA de Strasbourg. J'ai ainsi pu développer la majeure partie d'une application de traitement de données industrielles.",
+        "colors": [
+          "#5DBAEC",
+          "#162631"
+        ],
+        "short": "J'ai eu l'opportunité d'être le principal développeur d'un nouveau projet mené par l'agence Idéematic pour leur client, l'INSA de Strasbourg. J'ai ainsi pu développer la majeure partie d'une application de traitement de données industrielles.",
         "content": [
           {
             "type": "youtube",
@@ -28,11 +33,16 @@
       },
       {
         "title": "Portes Ouvertes",
+        "slug": "portes-ouvertes",
         "client": "Portes Ouvertes via l'agence Idéematic",
         "role": "Développeur",
         "date": "Mai 2018",
         "url": "https://www.portesouvertes.fr/",
         "mainImg": "/portfolio/covers/portesouvertes.jpg",
+        "colors": [
+          "#663182",
+          "#88195D"
+        ],
         "short": "Création d'une plateforme de publication de contenus pour Portes Ouvertes, une ONG internationale chrétienne qui est au service des chrétiens persécutés dans le monde. L'agence Idéematic a été choisie pour mener à bien la réalisation de ce projet pour les branches françaises et espagnoles de cette association.",
         "content": [
           {
@@ -53,11 +63,16 @@
       },
       {
         "title": "Fed Finance",
+        "slug": "fed-finance",
         "client": "Groupe Fed via l'agence Idéematic",
         "role": "Développeur",
         "date": "Mai 2017",
         "url": "https://www.fedfinance.fr/",
         "mainImg": "/portfolio/covers/fedfinance@2x.jpg",
+        "colors": [
+          "#2cb786",
+          "#e05206"
+        ],
         "short": "Refonte du site web de Fed Finance, client de l'agence Idéematic, dont l'ancien site avait été créé avec Drupal. Ce projet s'intégrait à la refonte de tous les sites du groupe Fed avec une nouvelle architecture basée sur Ruby on Rails.",
         "content": [
           {
